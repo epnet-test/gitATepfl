@@ -1,0 +1,12 @@
+#/etc/sysconfig/network-scripts/ifcfg-bond0
+
+DEVICE=bond0
+TYPE=Ethernet
+IPADDR=128.178.40.20
+NETMASK=255.255.255.0
+GATEWAY=128.178.40.1
+DOMAIN=epfl.ch
+ONBOOT=yes
+BOOTPROTO=none
+USERCTL=no
+BONDING_OPTS="mode=802.3ad lacp_rate=slow miimon=100 xmit_hash_policy=2 use_carrier=1"
